@@ -1,0 +1,99 @@
+.skill-set {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+    position: fixed; /* Fixed positioning to stay on the right side */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right side */
+    height: 100%; /* Full height of the viewport */
+    width: 50%; /* Adjust width as needed */
+    font-family: 'ClashDisplay-Extralight', sans-serif; /* Use your custom font */
+    font-weight: 600; /* Font weight */
+    letter-spacing: 0.0625em; /* Letter spacing */
+    font-size: 1.3em; /* Font size */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 1rem; /* Add padding to create space around content */
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+  }
+  
+  .skill-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Add space between badges */
+  }
+  
+  .skill-badge {
+    display: inline-block;
+    padding: 1rem 2rem; /* Adjust for padding */
+    font-size: 2rem; /* Size of text */
+    font-weight: bold; /* Make text bold */
+    font-family: 'ClashDisplay-Extralight', sans-serif; /* Use your custom font */
+    color: #fff; /* White text color */
+    background: linear-gradient(to right, #8b5cf6, #4f46e5); /* Gradient background */
+    border-radius: 1rem; /* Rounded corners */
+    border: 2px solid transparent; /* Initially no visible border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .skill-badge:hover {
+    border-color: #fff; /* White border on hover */
+    background: #fff; /* Light background on hover */
+    color: #000; /* Dark text on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More shadow on hover */
+  }
+  
+  .skill-badge:active {
+    transform: scale(1.05); /* Slight press-down effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Mobile view (max-width: 440px) */
+  @media screen and (max-width: 440px) {
+    .skill-set {
+      display: none; /* Hide on mobile */
+    }
+  
+    .opt-mobile {
+      display: inline-block;
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 100%;
+      padding-top: 18%;
+      padding-bottom: 18%;
+      margin-top: 100px;
+      position: relative;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.0625em;
+      color: white;
+    }
+  }
+  
+  /* Tablet view (441px - 900px) */
+  @media screen and (max-width: 900px) and (min-width: 441px) {
+    .skill-set {
+      display: inline-block;
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 100%;
+      padding-top: 18%;
+      padding-bottom: 18%;
+      margin-top: 100px;
+      position: relative;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.0625em;
+      color: white;
+    }
+  
+    .opt-mobile {
+      display: none; /* Hide mobile option */
+    }
+  }
+  

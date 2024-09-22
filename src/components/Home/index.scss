@@ -1,0 +1,138 @@
+.home-page {
+  img{
+    position: absolute;
+    border: 3px solid #f64c72;
+    background: linear-gradient(to right, #f0abfc, #4f46e5);
+    padding: 3px;
+    top: 6%;
+    left: 10%;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    opacity: 1;
+  }
+  
+    .text-zone {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40%;
+      max-height: 90%;
+    }
+  
+    h1 {
+      color: #EDF5E1;
+      
+      font-size: 56px;
+      line-height: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+  
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #f64c72;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: -15px;
+        opacity: 0.6;
+      }
+      &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #f64c72;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+
+    }
+    h2 {
+        color: #99738e;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 13px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+      }
+    
+      .flat-button {
+        color: #f64c72;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #f64c72;
+        margin-top: 25px;
+        float: left;
+        animation: fadeInAnimation 1s 1.8s backwards;
+        white-space: nowrap;
+    
+        &:hover {
+          background: #f64c72;
+          color: #fff;
+        }
+      }
+      
+}
+
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
+
+  .home-page img{
+    opacity: 0.8;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 100%;
+    left: 30%;
+  }
+  .home-page .text-zone {
+    position: initial;
+    width: 100%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .home-page .flat-button {
+    float: none;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 124px;
+  }
+
+  .logo-container {
+    position: relative;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+    left: 0;
+  }
+
+  .logo-container svg {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+  }
+}
